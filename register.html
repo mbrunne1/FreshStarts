@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - FreshStart</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>FreshStart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="skills-translator.html">Skills Translator</a>
+            <a href="mentors.html">Mentors</a>
+            <a href="training.html">Training</a>
+            <a href="success-stories.html">Success Stories</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="register.html">Sign Up</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Create Your Free Account</h2>
+        <p>Join thousands of professionals successfully transitioning to new careers. Get instant access to all our tools and resources.</p>
+        
+        <form id="registerForm">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required 
+                   placeholder="e.g., Sarah Martinez">
+            
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required 
+                   placeholder="your.email@example.com">
+            <small style="display: block; margin-top: 0.25rem; color: #666;">We'll never share your email with anyone.</small>
+            
+            <label for="password">Password *</label>
+            <input type="password" id="password" name="password" required 
+                   minlength="8" placeholder="Minimum 8 characters">
+            <small style="display: block; margin-top: 0.25rem; color: #666;">Must be at least 8 characters long</small>
+            
+            <label for="confirmPassword">Confirm Password *</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required
+                   placeholder="Re-enter your password">
+            
+            <label for="age">Age *</label>
+            <input type="number" id="age" name="age" required 
+                   min="18" max="100" placeholder="e.g., 38">
+            <small style="display: block; margin-top: 0.25rem; color: #666;">Must be 18 or older</small>
+            
+            <label for="currentIndustry">Current Industry *</label>
+            <select id="currentIndustry" name="currentIndustry" required>
+                <option value="">Select your current industry</option>
+                <option value="education">Education</option>
+                <option value="retail">Retail</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="hospitality">Hospitality</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="finance">Finance</option>
+                <option value="technology">Technology</option>
+                <option value="nonprofit">Nonprofit</option>
+                <option value="government">Government</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="yearsExperience">Years of Experience</label>
+            <input type="number" id="yearsExperience" name="yearsExperience" 
+                   min="0" max="50" placeholder="e.g., 12">
+            
+            <label for="targetIndustry">Industry You're Interested In (Optional)</label>
+            <select id="targetIndustry" name="targetIndustry">
+                <option value="">Select target industry</option>
+                <option value="technology">Technology</option>
+                <option value="consulting">Consulting</option>
+                <option value="corporate-training">Corporate Training</option>
+                <option value="nonprofit">Nonprofit</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="finance">Finance</option>
+                <option value="education">Education</option>
+                <option value="unsure">Not Sure Yet</option>
+            </select>
+            
+            <button type="submit">Create Free Account</button>
+        </form>
+        
+        <p style="text-align: center; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            Already have an account? <a href="login.html" style="font-weight: bold;">Log in here</a>
+        </p>
+        
+        <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 2rem;">
+            <h3 style="color: #667eea; text-align: center; margin-bottom: 1rem;">What You Get With Your Free Account</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✅ <strong>Skills Translator Tool</strong> - Discover transferable skills</li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✅ <strong>Access to Mentors</strong> - Connect with career changers</li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✅ <strong>Training Resources</strong> - Curated courses and certifications</li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✅ <strong>Job Board</strong> - Age-friendly employers</li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✅ <strong>Success Stories</strong> - Real career change journeys</li>
+                <li style="padding: 0.5rem 0;">✅ <strong>Community Access</strong> - Support from people like you</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FreshStart - Career Transition Platform | Built by The Pivot Crew for COMP4600</p>
+    </footer>
+</body>
+</html>
